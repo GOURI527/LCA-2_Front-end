@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AJIO</title>
+    <link rel="stylesheet" href="ajiostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="AJIO.png" alt="AJIO">
+            </div>
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <input type="text" placeholder="Search AJIO">
+                    <div class="icon-container">
+                        <button type="button" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button type="button" class="camera-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <button class="sign-in-btn">Sign In / Join AJIO</button>
+                <button class="cart-btn">🛒</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="category-grid">
+            <a href="#" class="category-card men">
+                <img src="image 11.png" alt="Men's Fashion">
+                <h2>Men</h2>
+            </a>
+            <a href="#" class="category-card women">
+                <img src="image.png" alt="Women's Fashion">
+                <h2>Women</h2>
+            </a>
+            <a href="#" class="category-card home-living">
+                <img src="image 2.png" alt="Home & Living">
+                <h2>Home & Living</h2>
+            </a>
+            <a href="#" class="category-card kids">
+                <img src="image 3.png" alt="Kids Fashion">
+                <h2>Kids</h2>
+            </a>
+        </section>
+
+        <section class="deals-section">
+            <h2>Deals of the Day</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="gold bracelet.png" alt="Gold Bracelet">
+                    <h3>Gold Bracelet</h3>
+                    <p class="price">₹999</p>
+                </div>
+                <div class="product-card">
+                    <img src="watch.png" alt="Watch">
+                    <h3>Classic Watch</h3>
+                    <p class="price">₹1499</p>
+                </div>
+                <div class="product-card">
+                    <img src="earings.png" alt="Gold Earrings">
+                    <h3>Gold Earrings</h3>
+                    <p class="price">₹799</p>
+                </div>
+                <div class="product-card">
+                    <img src="sunglasses.png" alt="Sunglasses">
+                    <h3>Designer Sunglasses</h3>
+                    <p class="price">₹599</p>
+                </div>
+                <div class="product-card">
+                    <img src="rhode blush.jpg" alt="Gold Ring">
+                    <h3>makeup</h3>
+                    <p class="price">₹899</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="trending-section">
+            <h2>Trending</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="dress.png" alt="Pink Dress">
+                    <h3>Pink Summer Dress</h3>
+                    <p class="price">₹1299</p>
+                </div>
+                <div class="product-card">
+                    <img src="kurta.png" alt="White Kurta">
+                    <h3>White Casual Kurta</h3>
+                    <p class="price">₹999</p>
+                </div>
+                <div class="product-card">
+                    <img src="lamp.png" alt="Table Lamp">
+                    <h3>Modern Table Lamp</h3>
+                    <p class="price">₹899</p>
+                </div>
+                <div class="product-card">
+                    <img src="candels.png" alt="Candle Set">
+                    <h3>Scented Candle Set</h3>
+                    <p class="price">₹699</p>
+                </div>
+                <div class="product-card">
+                    <img src="embriodry.jpg" alt="Ceramic Vase">
+                    <h3>embrioded shirts</h3>
+                    <p class="price">₹799</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="login-container" style="display: none;">
+        <div class="login-modal">
+            <div class="modal-header">
+                <button class="back-btn">&lt;</button>
+                <button class="close-btn">×</button>
+            </div>
+            
+            <h1>Welcome to AJIO</h1>
+            
+           
+            <div class="screen" id="phone-screen">
+                <div class="input-group">
+                    <label>Enter Mobile Number</label>
+                    <input type="tel" id="phone-input" value="+91" maxlength="13">
+                </div>
+                <button class="primary-btn" id="send-otp-btn">Send OTP</button>
+                
+                <div class="divider">Or</div>
+                
+                <div class="social-login">
+                    <p>Join/Sign in Using</p>
+                    <button class="social-btn google-btn">
+                        <img src="https://www.google.com/favicon.ico" alt="Google">
+                        Sign in with Google
+                    </button>
+                    <button class="social-btn microsoft-btn">
+                        <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft">
+                        Sign in with Microsoft
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://www.apple.com/favicon.ico" alt="Apple">
+                        Sign in with Apple
+                    </button>
+                </div>
+                
+                <p class="terms-text">
+                    By Signing In, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+            
+           
+            <div class="screen" id="otp-screen" style="display: none;">
+                <div class="input-group">
+                    <label>Enter OTP</label>
+                    <div class="otp-inputs">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                    </div>
+                </div>
+                <button class="primary-btn" id="verify-otp-btn">Verify OTP</button>
+                <p class="terms-text">
+                    By Signing In, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+
+            <div class="screen" id="otp-success-screen" style="display: none;">
+                <div class="otp-success">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>OTP Verified Successfully!</h2>
+                    <p>Your phone number has been verified.</p>
+                    <button class="primary-btn" id="continue-after-otp-btn">Continue</button>
+                </div>
+            </div>
+
+           
+            <div class="screen" id="account-screen" style="display: none;">
+                <h2>Select an account</h2>
+                <div id="account-list" class="account-list">
+           
+                </div>
+                <p class="terms-text">
+                    By Signing In, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+
+           
+            <div class="screen" id="password-screen" style="display: none;">
+                <div class="input-group">
+                    <label>Enter password</label>
+                    <div class="password-input-container">
+                        <input type="password" id="password-input" placeholder="Enter password">
+                        <button class="toggle-password" type="button">
+                           
+                        </button>
+                    </div>
+                </div>
+                <button class="primary-btn" id="login-btn">Continue</button>
+                <p class="terms-text">
+                    By Signing In, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ajio</h3>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Join Our Team</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Fees & Payments</a></li>
+                    <li><a href="#">Returns & Refunds Policy</a></li>
+                    <li><a href="#">Promotions Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Cancellations</a></li>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop by</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Indie</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i> Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payment-methods">
+                <h4>Payment methods</h4>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-university"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+            <div class="secure-shopping">
+                <h4>Secure systems</h4>
+                <div class="secure-icons">
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Notification -->
+    <div class="popup-notification" id="otp-popup">
+        <div class="popup-content">
+            <i class="fas fa-check-circle"></i>
+            <p>OTP Verified Successfully!</p>
+        </div>
+    </div>
+
+    <script src="ajioscript.js"></script>
+</body>
+</html>
